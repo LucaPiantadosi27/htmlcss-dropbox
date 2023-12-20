@@ -1,155 +1,190 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 /* reset */
 
-header{
-    height: 48px;
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-
-
+body {
+   font-family: 'Open Sans', sans-serif;
 }
 
-.container-nav{
-    display: flex;
-    justify-content: space-between;
-
+h1 {
+   font-size: 60px;
+   margin-bottom: 60px;
 }
 
-.navlink-left{
-    display: flex;
-    height: 35px;
-    width:150px ;
-    background-color: blue;
-}
-.navlink-right{
-    display: flex;
-    height: 35px;
-    width: 150px;px ;
-    background-color: blue;
+
+/* elementi comuni */
+.container-big {
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
-.container-nav ul{
-    display: flex;
-    gap: 15px;
+.long-container {
+   border: dotted 2px black;
+   min-height: 100px;
+
+   /* test */
+   max-width: 1000px;
+   margin-left: auto;
+   margin-right: auto;
 }
-/* --primo-- */
-.container-small{
-    max-width: 100%;
-    height: 415px;
-    background-color: lightskyblue;
+
+.btn {
+   display: inline-block;
+
+   padding: 12px 16px;
+
+   text-decoration: none;
+
+   color: white;
+   background-color: #0061ff;
 }
-.first-container{
-    max-width: 680px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
 
-    height: 165px;
-    border: dotted;
- }
+/* fine elementi comuni */
 
- .container-small-left{
 
- }
 
- .container-small-right{
 
- }
 
- .big-container{
-    max-width: 1095;
-    height: 2320px;
-    margin-left: auto;
-    margin-right: auto;
+/* navbar */
+nav {
+   height: 80px;
+   /* test */
 
-    background-color: antiquewhite;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 
- }
+   padding: 20px;
 
- #trhee-container{
-    display: flex;
+   background-color: white;
+}
+.nav-left{
+   display: flex;
    
-    gap: 15px;
-    max-width: 575px;
-    height: 542px;
-    margin-left: auto;
-    margin-right: auto;
-
- } 
-
- .frst{
-    
-    width: 175px;
-    height: 542px;
-    border: dotted red;
- }
-
- .scnd{
-    width: 175px;
-    height: 542px;
-    border: dotted red;
- }
-
-.trd{
-    width: 175px;
-    height: 542px;
-    border: dotted red;
+   
 }
 
- #square{
-    
-    height: 575px;
-    background-color: cadetblue;
- }
+.nav-right{
+   display: flex;
+   
+}
 
- .trhee-squares{
-    display: flex;
-    height: 365px;
-    width: 1095px;
-    margin-left: auto;
-    margin-right: auto;
-    border: solid red;
+/* fine navbar */
 
- }
 
- #one{
-    height: 367px;
-    width: 367px;
-    border: dotted green;
+/* header */
+header {
+   background-color: #b4d0e7;
 
- }
- #two{
-    height: 367px;
-    width: 367px;
-    border: dotted rgb(234, 250, 4);
+   /* padding-top: 100px; */
 
- }
- #three{
-    height: 367px;
-    width: 367px;
-    border: dotted rgb(0, 0, 0);
- }
+   margin-bottom: 150px;
+}
 
- #downsquare{
-    height: 206px;
-    width: 1095px;
-    margin-left: auto;
-    margin-right: auto;
+header .container-big {
+   position: relative;
+   bottom: -60px;
+}
 
-    border: solid violet;
- }
+header .row {
+   display: flex;
+}
 
- #questions{
-    height: 415px;
-    background-color: azure;
- }
+header .row .text {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 34px;
 
- footer{
-    height: 327px;
-    background-color: black;
- }
+   width: 30%;
+}
+
+header .row .text .fa-solid {
+   margin-top: 40px;
+   font-size: 46px;
+}
+
+header .row .image {
+   width: 70%;
+
+}
+
+header .row .image img {
+   width: 100%;
+}
+
+/* fine header */
+
+
+/* business plans */
+
+#business-plans {
+   margin-bottom: 150px;
+}
+
+#business-plans .row  {
+   display: flex;
+   justify-content: space-between;
+}
+
+#business-plans .row .plan {
+
+   border: dashed 1px red;
+   min-height: 100px;
+   
+   
+   width: calc(100% / 3 - 50px / 3 * 2)
+}
+
+/* fine business plans */
+
+
+/* get in contact */
+
+#get-in-contact {
+   display: flex;
+}
+
+#get-in-contact .image {
+   height: 200px;
+   border: 1px dashed black;
+   /* test */
+   width: 60%;
+}
+
+#get-in-contact .text {
+   height: 200px;
+   border: 1px dashed black;
+   /* test */
+   width: 40%;
+}
+/* fine get in contact */
+
+
+/* più operazioni */
+#more-operations {
+   background-color: lightpink;
+
+   /* test */
+}
+
+#more-operations .row  {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   gap: 50px;
+}
+
+#more-operations .row .col {
+   height: 200px;
+   border: dotted 2px red;
+   /* test */
+
+   width: calc(100% / 3 - 50px / 3 * 2);
+}
+
+/* fine più operazioni */
