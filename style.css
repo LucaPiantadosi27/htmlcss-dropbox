@@ -146,14 +146,20 @@ header .row .image img {
 /* get in contact */
 
 #get-in-contact {
-   display: flex;
+   display: flex; *
 }
 
 #get-in-contact .image {
+   display: flex;
    height: 200px;
    border: 1px dashed black;
    /* test */
    width: 60%;
+   
+}
+.image img{
+ height: 292px;
+ width: 350px;
 }
 
 #get-in-contact .text {
